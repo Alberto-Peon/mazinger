@@ -21,5 +21,8 @@ void next(void)
 	if (state.enemy_hp <= 0) {
 		puts("Congrats! You have defeated the enemy beast.");
 		exit(EXIT_SUCCESS);
+	} else {
+		state.mazinger_hp -= 10;
+		puts("Pang! The enemy beast has hit you.");
 	}
 }
