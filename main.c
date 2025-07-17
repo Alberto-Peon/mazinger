@@ -23,6 +23,7 @@ void run(char *cmd)
 
 int main(void)
 {
+	run("status");
 	int res;
 	char s[10];
 	puts("Enter a command (enter help for a list of commands):");
