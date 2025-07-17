@@ -1,9 +1,12 @@
 #ifndef _COMMAND_H
 #define _COMMAND_H
 
+#include <stdbool.h>
+
 typedef struct {
 	char *name;
 	char *help;
+	bool no_delta_t;
 	void (*exe)(void);
 } Command;
 

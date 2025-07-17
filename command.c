@@ -4,13 +4,13 @@
 #include "state.h"
 
 Command cmds[] = {
-	{ .name = "help",     .help = "shows available commands",   .exe = &help,   },
-	{ .name = "quit",     .help = "quits the battle",           .exe = &quit,   },
-	{ .name = "status",   .help = "describes the situation",    .exe = &status, },
-	{ .name = "punch",    .help = "simple but efective",        .exe = &punch,  },
-	{ .name = "scrander", .help = "recall jet scrander",                        },
-	{ .name = "pilder",   .help = "attach/detach hover pilder",                 },
-	{ .name = NULL,       .help = NULL,                         .exe = NULL,    },
+	{ .name = "help",     .help = "shows available commands", .no_delta_t = true, .exe = &help,   },
+	{ .name = "quit",     .help = "quits the battle",         .no_delta_t = true, .exe = &quit,   },
+	{ .name = "status",   .help = "describes the situation",  .no_delta_t = true, .exe = &status, },
+	{ .name = "punch",    .help = "simple but efective",                          .exe = &punch,  },
+	{ .name = "scrander", .help = "recall jet scrander",                                          },
+	{ .name = "pilder",   .help = "attach/detach hover pilder",                                   },
+	{ .name = NULL,       .help = NULL,                                           .exe = NULL,    },
 };
 
 void help(void)

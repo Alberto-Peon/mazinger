@@ -12,6 +12,9 @@ void run(char *cmd)
 			} else {
 				puts(cp->help);
 			}
+			if (!cp->no_delta_t) {
+				next();
+			}
 			return;
 		}
 	}
@@ -25,6 +28,5 @@ int main(void)
 	puts("Enter a command (enter help for a list of commands):");
 	while ((res = scanf("%s", s)) != EOF) {
 		run(s);
-		next();
 	}
 }
