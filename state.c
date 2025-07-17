@@ -25,4 +25,8 @@ void next(void)
 		state.mazinger_hp -= 10;
 		puts("Pang! The enemy beast has hit you.");
 	}
+	if (state.mazinger_hp <= 0) {
+		puts("You have died at the hands of the enemy beast");
+		exit(EXIT_SUCCESS);
+	}
 }
