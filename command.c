@@ -29,4 +29,5 @@ void quit(void)
 void punch(void)
 {
 	state.enemy_hp -= 10;
+	puts("Kapow!");
 }
