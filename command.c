@@ -4,19 +4,19 @@
 #include "state.h"
 
 Command cmds[] = {
-	{ .name = "help",     .help = "shows available commands", .no_delta_t = true, .exe = &help,   },
-	{ .name = "quit",     .help = "quits the battle",         .no_delta_t = true, .exe = &quit,   },
-	{ .name = "status",   .help = "describes the situation",  .no_delta_t = true, .exe = &status, },
-	{ .name = "punch",    .help = "simple but efective",                          .exe = &punch,  },
-	{ .name = "scrander", .help = "recall jet scrander",                                          },
-	{ .name = "pilder",   .help = "attach/detach hover pilder",                                   },
-	{ .name = NULL,       .help = NULL,                                           .exe = NULL,    },
+	{ .id = "help",     .help = "shows available commands", .no_delta_t = true, .exe = &help,   },
+	{ .id = "quit",     .help = "quits the battle",         .no_delta_t = true, .exe = &quit,   },
+	{ .id = "status",   .help = "describes the situation",  .no_delta_t = true, .exe = &status, },
+	{ .id = "punch",    .help = "simple but efective",                          .exe = &punch,  },
+	{ .id = "scrander", .help = "recall jet scrander",                                          },
+	{ .id = "pilder",   .help = "attach/detach hover pilder",                                   },
+	{ .id = NULL,       .help = NULL,                                           .exe = NULL,    },
 };
 
 void help(void)
 {
-	for (Command *cp = cmds; cp->name != NULL; ++cp) {
-      		printf("%s:\t%s\n", cp->name, cp->help);
+	for (Command *cp = cmds; cp->id != NULL; ++cp) {
+		printf("%s:\t%s\n", cp->id, cp->help);
 	}
 }
 

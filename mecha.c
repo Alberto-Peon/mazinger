@@ -5,6 +5,6 @@
 #include "state.h"
 
 Mecha mechas[] = {
-	{ .name = "Doublas M2", .info = "Two heads", .initial_hp = 50, },
-	{ .name = NULL,         .info = NULL,                          },
+	{ .id = "Doublas M2", .info = "Two heads", .initial_hp = 50, },
+	{ .id = NULL,         .info = NULL,                          },
 };

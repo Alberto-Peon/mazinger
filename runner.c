@@ -6,8 +6,8 @@
 
 void run(char *cmd)
 {
-	for (Command *cp = cmds; cp->name != NULL; ++cp) {
-		if (strcmp(cmd, cp->name) == 0) {
+	for (Command *cp = cmds; cp->id != NULL; ++cp) {
+		if (strcmp(cmd, cp->id) == 0) {
 			if (cp->exe != NULL) {
 				cp->exe();
 			} else {
