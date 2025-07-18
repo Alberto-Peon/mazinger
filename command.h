@@ -4,7 +4,7 @@
 #include <stdbool.h>
 
 typedef struct {
-	char *name;
+	char *id;
 	char *help;
 	bool no_delta_t;
 	void (*exe)(void);

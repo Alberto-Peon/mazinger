@@ -4,13 +4,13 @@
 #include <stdbool.h>
 
 typedef struct {
-	char *name;
+	char *id;
 	char *info;
 	int damage;
 } Attack;
 
 typedef struct {
-	char *name;
+	char *id;
 	char *info;
 	int initial_hp;
 	bool is_friendly;
