@@ -10,7 +10,7 @@ Command cmds[] = {
 	{ .id = "punch",    .help = "simple but efective",                          .exe = &punch,  },
 	{ .id = "scrander", .help = "recall jet scrander",                                          },
 	{ .id = "pilder",   .help = "attach/detach hover pilder",                                   },
-	{ .id = NULL,       .help = NULL,                                           .exe = NULL,    },
+	{ .id = NULL,                                                                               },
 };
 
 void help(void)

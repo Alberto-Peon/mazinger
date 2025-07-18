@@ -6,5 +6,5 @@
 
 Mecha mechas[] = {
 	{ .id = "Doublas M2", .info = "Two heads", .initial_hp = 50, },
-	{ .id = NULL,         .info = NULL,                          },
+	{ .id = NULL,                                                },
 };
