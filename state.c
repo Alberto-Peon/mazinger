@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "mecha.h"
 #include "state.h"
 
-State state = {
-	.enemy_hp    =  50,
-	.mazinger_hp = 100,
-};
+State state;
+
+void init_state()
+{
+	state.mazinger_hp = mechas[0].initial_hp;
+	state.enemy_hp    = mechas[1].initial_hp;
+}
 
 void status(void)
 {

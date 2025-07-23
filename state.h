@@ -7,6 +7,7 @@ typedef struct {
 } State; 
 
 extern State state;
+extern void init_state(void);
 extern void status(void);
 extern void next(void);
 
