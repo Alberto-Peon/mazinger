@@ -12,6 +12,7 @@ void run(char *cmd)
 				cp->exe();
 			} else {
 				puts(cp->help);
+				puts("\aNot implemented yet!");
 			}
 			if (!cp->no_delta_t) {
 				next();
